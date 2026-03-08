@@ -1,0 +1,23 @@
+# Geospatial & Graph
+osmnx
+networkx
+geopandas
+shapely
+
+# Machine Learning
+torch
+stable-baselines3
+shimmy[gymany]     
+gymnasium
+
+# API & UI
+streamlit
+fastapi
+uvicorn
+folium            
+streamlit-folium
+
+# Utils
+pandas
+numpy
+matplotlib

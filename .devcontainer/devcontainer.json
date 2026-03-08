@@ -1,0 +1,17 @@
+{
+    "name": "EcoRoute-ML-Env",
+    "image": "mcr.microsoft.com/devcontainers/python:3.10",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
