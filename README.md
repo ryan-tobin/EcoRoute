@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="logo/logo.svg" alt="EcoRoute Logo" width="100"/>
+</div>
+
 # EcoRoute: RL-Powered Logistics Optimizer
 
 ![EcoRoute Demo](https://img.shields.io/badge/Status-Active_Development-brightgreen)

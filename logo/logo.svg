@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+    <linearGradient id="pinGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <path d="M 250 160 L 180 220 L 220 300 L 300 260 Z" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6,6" opacity="0.6" />
+  <path d="M 250 160 L 320 190 L 300 260" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6,6" opacity="0.6" />
+
+  <circle cx="250" cy="160" r="6" fill="#4ade80" opacity="0.8" />
+  <circle cx="180" cy="220" r="6" fill="#4ade80" opacity="0.8" />
+  <circle cx="220" cy="300" r="6" fill="#4ade80" opacity="0.8" />
+  <circle cx="300" cy="260" r="6" fill="#4ade80" opacity="0.8" />
+  <circle cx="320" cy="190" r="6" fill="#4ade80" opacity="0.8" />
+
+  <path d="M 250 440 C 370 300 390 230 390 170 C 390 92 328 30 250 30" fill="none" stroke="url(#pinGradient)" stroke-width="28" stroke-linecap="round" filter="url(#glow)"/>
+
+  <path d="M 250 440 C 130 300 110 230 110 170 C 110 92 172 30 250 30" fill="none" stroke="url(#leafGradient)" stroke-width="28" stroke-linecap="round" filter="url(#glow)"/>
+
+  <path d="M 110 170 C 160 210 220 280 250 440" fill="none" stroke="url(#leafGradient)" stroke-width="18" stroke-linecap="round" />
+
+  <circle cx="250" cy="170" r="36" fill="url(#pinGradient)" filter="url(#glow)"/>
+  <circle cx="250" cy="170" r="14" fill="#ffffff" />
+</svg>
