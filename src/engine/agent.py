@@ -2,7 +2,8 @@ import logging
 from pathlib import Path 
 import osmnx as ox 
 
-from sb3_contrib import RecurrentPPO
+# from sb3_contrib import RecurrentPPO
+from stable_baselines3 import PPO
 from stable_baselines3.common.env_checker import check_env
 
 # Import our custom environment
@@ -35,8 +36,8 @@ def train_agent():
 
     # 4. Instantiate the NN
     logger.info("Instantiating PPO Agent...")
-    model = RecurrentPPO("MlpLstmPolicy", env, verbose=1, tensorboard_log="./tensorboard_logs/")
-
+    # model = RecurrentPPO("MlpLstmPolicy", env, verbose=1, tensorboard_log="./tensorboard_logs/")
+    model = PPO("MlpPolicy", env, verbose=1, tensorboard_log="./tensorboard_logs/")
 
     # 5. Train the model
     logger.info("Starting training loop (500,000 timesteps)...")
